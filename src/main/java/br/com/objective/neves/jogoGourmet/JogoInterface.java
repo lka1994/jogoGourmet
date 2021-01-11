@@ -15,7 +15,7 @@ public class JogoInterface {
 	}
 
 	public int perguntarComidaQuePensou(String comida) {
-		return showConfirmDialog(null, "A comida que vocÃª pensou Ã© " + comida + "?", TITULO_JOGO, YES_NO_OPTION);
+		return showConfirmDialog(null, "A comida que você pensou é " + comida + "?", TITULO_JOGO, YES_NO_OPTION);
 	}
 
 	public void mostrarMensagemAcertei() {
@@ -23,10 +23,10 @@ public class JogoInterface {
 	}
 
 	public String perguntarComidaCorreta() {
-		return showInputDialog("Qual comida vocÃª pensou?");
+		return showInputDialog("Qual comida você pensou?");
 	}
 
 	public String perguntarAspectoComidaCorreta(String comidaCorreta, String comidaIncorreta) {
-		return showInputDialog(comidaCorreta + " Ã© _____, mas " + comidaIncorreta + " nÃ£o Ã©.");
+		return showInputDialog(comidaCorreta + " é _____, mas " + comidaIncorreta + " não é.");
 	}
 }

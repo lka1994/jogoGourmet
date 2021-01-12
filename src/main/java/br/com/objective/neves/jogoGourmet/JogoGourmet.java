@@ -9,15 +9,10 @@ public class JogoGourmet {
 	private static void inicializarArvore() {
 		raizArvore = new NodoGalho("massa");
 
-		NodoGalho comidaCarne = new NodoGalho("carne");
+		NodoFolha comidaLasanha = new NodoFolha(raizArvore, "lasanha");
 		NodoGalho comidaFria = new NodoGalho("fria");
-		raizArvore.setSim(comidaCarne);
+		raizArvore.setSim(comidaLasanha);
 		raizArvore.setNao(comidaFria);
-
-		NodoFolha comidaLasanha = new NodoFolha(comidaCarne, "lasanha");
-		NodoFolha comidaNhoque = new NodoFolha(comidaCarne, "nhoque");
-		comidaCarne.setSim(comidaLasanha);
-		comidaCarne.setNao(comidaNhoque);
 
 		NodoFolha comidaSorvete = new NodoFolha(comidaFria, "sorvete");
 		NodoFolha comidaArroz = new NodoFolha(comidaFria, "arroz");
